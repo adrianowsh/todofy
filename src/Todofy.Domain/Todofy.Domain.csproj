@@ -1,5 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <Folder Include="Todos\" />
+    <ProjectReference Include="..\Todofy.SharedKernel\Todofy.SharedKernel.csproj" />
   </ItemGroup>
 </Project>
