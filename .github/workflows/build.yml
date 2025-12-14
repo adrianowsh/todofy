@@ -22,13 +22,13 @@ jobs:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
       - name: Restore
-        run: dotnet restore Todofy.sln
+        run: dotnet restore Todofy.slnx
 
       - name: Build
-        run: dotnet build Todofy.sln --configuration Release --no-restore
+        run: dotnet build Todofy.slnx --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test Todofy.sln --configuration Release --no-restore --no-build
+        run: dotnet test Todofy.slnx --configuration Release --no-restore --no-build
 
       - name: Publish
-        run: dotnet publish Todofy.sln --configuration Release --no-restore --no-build
+        run: dotnet publish Todofy.slnx --configuration Release --no-restore --no-build
